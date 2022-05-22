@@ -22,6 +22,17 @@ as a new key in the `settings.json` file. After this, you'll need to restart Dis
 
 If successful, you can now open the developer tools by pressing `Ctrl + Shift + I` on Windows and Linux, or `Cmd + Shift + I` on macOS.
 
+## Fully-Resizable Window
+
+The first is not actually a script, but a settings - applied to `settings.json` - that allows one to resize Discord as they want, which I personally find useful to make it smaller then it allows by default.
+
+```json
+  "MIN_WIDTH": 0,
+  "MIN_HEIGHT": 0,
+```
+
+Of course after restarting Discord, you'll be able to resize it as you want.
+
 ## [Inbox Refresher](./scripts/inbox-refresher.js)
 
 While the Discord inbox is useful for seeing what you missed across servers, direct messages, and other sources, the issue is that it does not refresh - if you have it open and a new message comes in, it will not appear in the inbox until you close and open it.
