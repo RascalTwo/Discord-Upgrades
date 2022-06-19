@@ -38,3 +38,11 @@ Of course after restarting Discord, you'll be able to resize it as you want.
 While the Discord inbox is useful for seeing what you missed across servers, direct messages, and other sources, the issue is that it does not refresh - if you have it open and a new message comes in, it will not appear in the inbox until you close and open it.
 
 This script does exactly that - when the inbox is empty, it will close it and reopen it.
+
+## [Sidebar Controls](./scripts/sidebar-controls.js)
+
+The Guild Navigation and Sidebar both take up valuable screen real estate, and while they are useful, they are not always needed - perhaps if you have a live inbox, you use that instead of looking at these.
+
+Of course there are times they are useful, in addition perhaps you just want them to be on the right instead of the left.
+
+This script allows both of those customizations - first by adding a close and open button for each, and secondly by making right click of the close button flip the selected panel to the other side.
