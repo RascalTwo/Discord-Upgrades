@@ -46,3 +46,9 @@ The Guild Navigation and Sidebar both take up valuable screen real estate, and w
 Of course there are times they are useful, in addition perhaps you just want them to be on the right instead of the left.
 
 This script allows both of those customizations - first by adding a close and open button for each, and secondly by making right click of the close button flip the selected panel to the other side.
+
+## [Copy Tag](./scripts/copy-tag.js)
+
+As useful as the ability to copy IDs of entities - Users, Channels, etc - is, most commonly for crafting mentions to those things via the `<@user-id>` or `<#thread-id>` syntax, it'd be useful if this tag copying was automated.
+
+This scripts adds a new option - right below the `Copy Id` context menu option - that does this exactly, copies the tag of the selected entity into the clipboard.
