@@ -10,7 +10,7 @@ uninstallInboxRefresher = ((rate = 1000) => {
 	(async () => {
 		while (running) {
 			if (document.querySelector('[aria-label="Inbox"][role="dialog"]')?.textContent.includes("You're all caught up")) {
-				const button = document.querySelector('[aria-label="Channel header"] [aria-label="Inbox"]')
+				const button = document.querySelector('[aria-label="Inbox"]')
 				button.click();
 				await delay(rate);
 				button.click();
