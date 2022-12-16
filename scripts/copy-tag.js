@@ -1,4 +1,11 @@
 uninstallTagCopying = (() => {
+	function getReactProps(element){
+		for (const key in element){
+			if (key.startsWith('__reactProps$')) return element[key]
+		}
+		return null;
+	}
+
 	if (typeof uninstallTagCopying === 'function') uninstallTagCopying();
 
 	const HOVER_CLASS = 'focused-3qFvc8';
@@ -20,7 +27,7 @@ uninstallTagCopying = (() => {
 				copyTagButton.querySelector('[class^="label"]').textContent = 'Copy Tag';
 				copyTagButton.querySelector('[class^="iconContainer"]').remove();
 				copyTagButton.addEventListener('click', () => {
-					const props = copyIDButton.closest('[role="menu"]').parentElement.__reactProps$.children.props.children.props
+					const props = getReactProps(copyIDButton.closest('[role="menu"]').parentElement).children.props.children.props
 
 					let text = ''
 					if (copyIDButton.id.startsWith('user')) text = `<@${props.user.id}>`
